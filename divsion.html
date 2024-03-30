@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+    
+    <style>
+        body{
+            background: rgb(196,135,162);
+            background: radial-gradient(circle, rgba(196,135,162,1) 0%, rgba(140,124,245,1) 100%);
+            min-height: 100vh;
+            }
+            .container{
+                background-color: white;
+                width: 500px;
+                display: block;
+                margin: 0 auto;
+                padding: 10px;
+                border-radius: 10px;
+            }
+            .app-title{
+                color: white;
+                margin-left: 40%;
+            }
+            .number-input{
+                width: 80%;
+                display: block;
+                margin: 10px auto;
+                padding: 5px;
+                border-radius: 5px;
+                font-size: 20px;
+            }
+            .Answer{
+                text-align: center;
+                font-size: 20px;
+            }
+            .btn-calculate{
+                width: 150px;
+                display: block;
+                font-size: 20px;
+                margin: 10px auto;
+                background-color: black;
+                color: white;
+                border-radius: 50px;
+                border: none;
+                padding: 5px 10px;
+                cursor: pointer;
+            }
+        
+        @media screen and  (max-width: 768px){
+            .container{
+                width: 80%;
+            }
+            .app-title{
+                width: 60%;
+                margin: auto;
+                padding: 10px;
+            }
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <h1 class="app-title"> Division  of Two Number</h1>
+    <div class="container">
+        <input type="text" placeholder=" Enter Number 1" class="number-input" id="num1"/>
+        <input type="text" placeholder="Enter Number 2" class="number-input" id="num2"/>
+        <p class="Answer" id="ans"></p>
+        <button type="button" class="btn-calculate" onclick="calculate()"> Calculate </button>
+        <button type="button" class="btn-calculate" onclick="Reset()"> Reset </button>
+    </div>
+   
+    <script>
+        function calculate()
+        {
+            
+            const input1 = document.getElementById("num1")
+
+            const input2 = document.getElementById("num2")
+
+            const ansElement = document.getElementById("ans");
+
+
+
+            
+            const Div  = parseInt(input1.value) / parseInt(input2.value);
+            ansElement.innerText = `Answer: ${Div}`
+
+
+        }
+
+        function Reset(){
+            const input1 = document.getElementById("num1")
+
+            const input2 = document.getElementById("num2")
+
+            const ansElement = document.getElementById("ans");
+            input1.value = "";
+            input2.value = "";
+
+            ansElement.innerText = "";
+
+        }
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+    
+    <style>
+        body{
+            background: rgb(196,135,162);
+            background: radial-gradient(circle, rgba(196,135,162,1) 0%, rgba(140,124,245,1) 100%);
+            min-height: 100vh;
+            }
+            .container{
+                background-color: white;
+                width: 500px;
+                display: block;
+                margin: 0 auto;
+                padding: 10px;
+                border-radius: 10px;
+            }
+            .app-title{
+                color: white;
+                margin-left: 40%;
+            }
+            .number-input{
+                width: 80%;
+                display: block;
+                margin: 10px auto;
+                padding: 5px;
+                border-radius: 5px;
+                font-size: 20px;
+            }
+            .Answer{
+                text-align: center;
+                font-size: 20px;
+            }
+            .btn-calculate{
+                width: 150px;
+                display: block;
+                font-size: 20px;
+                margin: 10px auto;
+                background-color: black;
+                color: white;
+                border-radius: 50px;
+                border: none;
+                padding: 5px 10px;
+                cursor: pointer;
+            }
+        
+        @media screen and  (max-width: 768px){
+            .container{
+                width: 80%;
+            }
+            .app-title{
+                width: 60%;
+                margin: auto;
+                padding: 10px;
+            }
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <h1 class="app-title"> Division  of Two Number</h1>
+    <div class="container">
+        <input type="text" placeholder=" Enter Number 1" class="number-input" id="num1"/>
+        <input type="text" placeholder="Enter Number 2" class="number-input" id="num2"/>
+        <p class="Answer" id="ans"></p>
+        <button type="button" class="btn-calculate" onclick="calculate()"> Calculate </button>
+        <button type="button" class="btn-calculate" onclick="Reset()"> Reset </button>
+    </div>
+   
+    <script>
+        function calculate()
+        {
+            
+            const input1 = document.getElementById("num1")
+
+            const input2 = document.getElementById("num2")
+
+            const ansElement = document.getElementById("ans");
+
+
+
+            
+            const Div  = parseInt(input1.value) / parseInt(input2.value);
+            ansElement.innerText = `Answer: ${Div}`
+
+
+        }
+
+        function Reset(){
+            const input1 = document.getElementById("num1")
+
+            const input2 = document.getElementById("num2")
+
+            const ansElement = document.getElementById("ans");
+            input1.value = "";
+            input2.value = "";
+
+            ansElement.innerText = "";
+
+        }
+    </script>
+</body>
+</html>
